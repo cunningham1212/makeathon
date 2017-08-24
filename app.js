@@ -16,8 +16,8 @@ var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
     
-//mongoose.connect("mongodb://localhost/yelp_camp_v12");
-mongoose.connect("mongodb://jc:passweird@ds157723.mlab.com:57723/yelpcamp");
+// Good practive the have. Use config varaible on Heroku and use the export comand using clound 9
+mongoose.connect(process.env.DATABASEURL);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
