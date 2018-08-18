@@ -17,7 +17,7 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index")
     
 // Good practive the have. Use config varaible on Heroku and use the export comand using clound 9
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect("mongodb://cypher:f0cklafayette@ds261479.mlab.com:61479/lehighspd");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -49,7 +49,12 @@ app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-
+/*
 app.listen(process.env.PORT, process.env.IP, function(){
    console.log("The YelpCamp Server Has Started!");
 });
+*/
+
+app.listen(3001, 'localhost', function() {
+    console.log("SPD Site Has Started");
+  });

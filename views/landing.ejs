@@ -1,37 +1,219 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>YelpCamp</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/stylesheets/landing.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+        <title>Sigma Phi Delta - Beta Kappa</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/stylesheets/landing.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>    
     </head>
+    
     <body>
-    
-    <div class="container">
-        <% if(error && error.length > 0){ %>
-            <div class="alert alert-danger" role="alert">
-                <%= error %>
-            </div>
-        <% } %>
-        <% if(success && success.length > 0){ %>
-            <div class="alert alert-success" role="alert">
-                <%= success %>
-            </div>
-        <% } %>
-    </div>
-    
-    <div id="landing-header">
- 		<h1>Welcome to YelpCamp!</h1>
-		<a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
-    </div>
-    
-    <ul class="slideshow">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+            <div class="container">
+                    <% if(error && error.length > 0){ %>
+                        <div class="alert alert-danger" role="alert">
+                            <%= error %>
+                        </div>
+                    <% } %>
+                    <% if(success && success.length > 0){ %>
+                        <div class="alert alert-success" role="alert">
+                            <%= success %>
+                        </div>
+                    <% } %>
+                </div>
 
-<% include partials/footer %>
+            <!-- Wrapper -->
+                <div id="wrapper">
+    
+                    <!-- Main -->
+                        <div id="main">
+                            <div class="inner">
+    
+                                <!-- Header -->
+                                    <header id="header">
+                                        <a href="index.html" class="logo"><strong>Sigma Phi Delta</strong> Beta Kappa</a>
+                                        <ul class="icons">
+                                            <li><a href="https://twitter.com/SigmaPhiDelta" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                            <li><a href="https://www.facebook.com/SigmaPhiDeltaLehigh/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                            <li><a href="https://www.instagram.com/lehighspd/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                                        </ul>
+                                    </header>
+    
+                                <!-- Banner -->
+                                    <section id="banner">
+                                        <div class="content">
+                                            <header>
+                                                <h1>Sigma Phi Delta</h1>
+                                                <p>Beta Kappa Chapter</p>
+                                            </header>
+                                            <p>The Lehigh University Beta Kappa chapter of Sigma Phi Delta is a home for engineers at Lehigh. Sigma Phi Delta is the premier international fraternity of engineers.</p>
+                                            <ul class="actions">
+                                                <li><a href="/campgrounds" class="button big">Sign In</a></li>
+                                                <li><a href="/campgrounds" class="button big">Learn More</a></li>
+                                            </ul>
+                                        </div>
+                                        <span class="image object">
+                                            <img src="images/main.jpg" alt="" />
+                                        </span>
+                                    </section>
+                                </div>
+    
+                                <div class="inner" style="background-color: #CC0000">
+                                    <section>
+                                        <header class="major">
+                                            <h2>Events</h2>
+                                        </header>
+                                        <div class="posts">
+                                            <article>
+                                                <div class="event">
+                                                    <h1>Event One</h2>
+                                                    <h3><i>5/1/2018 5PM Packard</i></h3>
+                                                    <p>Hello world, this so some text. This is a great event that you should totally go to. 10/10 the best. Please, please please go.</p>
+                                                    <a href="#" class="button special small event-button">Philanthropy Event</a>
+                                                </div>
+                                            </article>
+                                            <article>
+                                                <div class="event">
+                                                    <h1>Event Two</h2>
+                                                    <h3><i>5/1/2018 5PM Packard</i></h3>
+                                                    <p>Hello world, this so some text. This is a great event that you should totally go to. 10/10 the best. Please, please please go.</p>
+                                                    <a href="#" class="button special small event-button">Professional Event</a>
+                                                </div>
+                                            </article>
+                                            <article>
+                                                <div class="event">
+                                                    <h1>Event Three</h2>
+                                                    <h3><i>5/1/2018 5PM Packard</i></h3>
+                                                    <p>Hello world, this so some text. This is a great event that you should totally go to. 10/10 the best. Please, please please go.</p>
+                                                    <a href="#" class="button special small event-button">Philanthropy Event</a>
+                                                </div>
+                                            </article>
+                                            <article>
+                                                <div class="event">
+                                                    <h1>Event Four</h2>
+                                                    <h3><i>5/1/2018 5PM Packard</i></h3>
+                                                    <p>Hello world, this so some text. This is a great event that you should totally go to. 10/10 the best. Please, please please go.</p>
+                                                    <a href="#" class="button special small event-button">Philanthropy Event</a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                            <p style="text-align: center; margin-top: 50px">See More | See Previous</p>
+    
+                                    <style>
+                                    .event {
+                                        padding-bottom: 35px;
+                                    }
+    
+                                    .event h3 {
+                                        font-size: 1.25em;
+                                        width: 100%;
+                                        padding-bottom: 10px;
+                                        border-bottom: dotted;
+                                            letter-spacing: 1px;
+                                    }
+                                    </style>
+                                    </section>
+    
+                                </div>
+    
+                                <div class="inner">
+    
+                                    <section>
+                                        <header class="major">
+                                            <h2>Our Brothers</h2>
+                                        </header>
+                                        <p>Sigma Phi Delta Beta Kappa brothers have all kinds of backgrounds.</p>
+                                        <div class="row 50% uniform" style="margin-bottom: 30px">
+                                            <div class="4u"><span class="image fit"><img src="images/photo1.png" alt="" /></span></div>
+                                            <div class="4u"><span class="image fit"><img src="images/photo2.png" alt="" /></span></div>
+                                            <div class="4u$"><span class="image fit"><img src="images/photo3.png" alt="" /></span></div>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="#" class="button big" style="margin-bottom: 10px">Exec Members</a></li>
+                                            <li><a href="#" class="button big" style="margin-bottom: 10px">Active Brothers</a></li>
+                                        </ul>
+                                    </section>
+    
+    
+                            </div>
+                            <div class="inner" style="background-color: #CC0000">
+                                <section>
+                                    <header class="major">
+                                        <h2>Professional Resources</h2>
+                                    </header>
+                                    <div class="posts">
+                                        <article>
+                                            <h3>Public Resource One</h3>
+                                            <p>These are resources we make available to everyone to demonstrate our professional aspects.</p>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button">More</a></li>
+                                            </ul>
+                                        </article>
+                                        <article>
+                                            <h3>Public Resource Two</h3>
+                                            <p>These are resources we make available to everyone to demonstrate our professional aspects.</p>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button">More</a></li>
+                                            </ul>
+                                        </article>
+                                    </div>
+                                </section>
+    
+                            </div>
+                        </div>
+    
+                        <style>
+                        .white-text {
+                            color: #fff;
+                        }
+                        </style>
+    
+                    <!-- Sidebar -->
+                        <div id="sidebar">
+                            <div class="inner">
+    
+                                <!-- Menu -->
+                                    <nav id="menu">
+                                        <section>
+                                            <header class="major">
+                                                <h2>I Am...</h2>
+                                            </header>
+                                            <ul>
+                                                <li><a href="elements.html">Someone Interested in SPD</a></li>
+                                                <li><a href="index.html">A Beta Kappa Sigma Phi Delta Brother</a></li>
+                                                <li><a href="generic.html">An Other Sigma Phi Delta Brother</a></li>
+                                            </ul>
+                                        </section>
+                                        <section style="margin-top: 30px">
+                                            <header class="major">
+                                                <h2>Interested in rushing?</h2>
+                                            </header>
+                                            <p>Sigma Phi Delta brothers are engineers who see a value in brotherhood, duty, and academic success.</p>
+                                            <ul>
+                                                <li><a href="elements.html">Learn More</a></li>
+                                            </ul>
+                                        </section>
+    
+                                    </nav>
+    
+    
+                                <!-- Footer -->
+                                    <footer id="footer">
+                                        <p class="copyright">&copy; Sigma Phi Delta Beta Kappa. All rights reserved.</p>
+                                    </footer>
+    
+                            </div>
+                        </div>
+    
+                </div>
+    
+            <!-- Scripts -->
+                <script src="/js/jquery.min.js"></script>
+                <script src="/js/skel.min.js"></script>
+                <script src="/js/util.js"></script>
+                <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+                <script src="/js/main.js"></script>
+    
+        </body>
+    </html>

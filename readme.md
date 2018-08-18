@@ -1,6 +1,6 @@
-#YelpCamp
+#Lehigh Sigma Phi Delta
 
-##Initial Setup
+##Hello
 * Add Landing Page
 * Add Campgrounds Page that lists all campgrounds
 
@@ -128,9 +128,9 @@ Each Campground has:
 * Hide/Show edit and delete buttons
 * Refactor Middleware
 
-#Adding in Flash!
-* Demo working version
-* Install and configure connect-flash
+#Credits
+* Cypjer: 
+* Design: HTML5 UP
 * Add bootstrap alerts to header
 
 
