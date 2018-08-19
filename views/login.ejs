@@ -1,10 +1,29 @@
-<% include ./partials/header %> 
-
-<h1>Login!</h1>
-<form action="/login" method="POST">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <input type="submit" value="Login!">
-</form>
-
-<% include ./partials/footer %> 
+<html style="height: 100%; width: 100%;">
+<head>
+    <title>Lehigh Sigma Phi Delta</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body style="height: 100%; width: 100%;">
+    <div style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; background-color: #000;">
+        <div style="color: #fff;">
+            <form action="/login" autocomplete="off" method="POST" style="max-width: 450px; width: 80%; margin: 0 auto;">
+                <h1 style="margin: 0px 0px 15px 0px;">Login</h1>
+                <label for="inp1" class="inp" style="margin: 15px 0px; width: 80%; max-width: 450px;">
+                    <input type="text" name="username" id="inp1" placeholder="&nbsp;" style="max-width: 440px;width: 100%;">
+                    <span class="label">Username</span>
+                    <span class="border"></span>
+                </label>
+                <label for="inp2" class="inp" style="margin: 15px 0px; width: 80%; max-width: 450px;">
+                    <input type="password" name="password" id="inp2" placeholder="&nbsp;" style="max-width: 440px;width: 100%;">
+                    <span class="label">Password</span>
+                    <span class="border"></span>
+                </label>
+                
+                <input type="submit" value="Login" style="display: block; margin: 15px 0px; padding: 10px 25px; background: transparent; border: solid 2px #cc0000; border-radius: 10px; width: 100%;">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

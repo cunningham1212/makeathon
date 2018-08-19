@@ -8,7 +8,7 @@ var express     = require("express"),
     methodOverride = require("method-override"),
     Campground  = require("./models/campground"),
     Comment     = require("./models/comment"),
-    User        = require("./models/user"),
+    Brother        = require("./models/brother"),
     seedDB      = require("./seeds")
     
 //requiring routes
@@ -34,12 +34,14 @@ app.use(require("express-session")({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-passport.use(new LocalStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+passport.use(new LocalStrategy(Brother.authenticate()));
+passport.serializeUser(Brother.serializeUser());
+passport.deserializeUser(Brother.deserializeUser());
 
 app.use(function(req, res, next){
-   res.locals.currentUser = req.user;
+   //console.log(req.brother + " B");
+   //console.log(req.user + " U");
+   res.locals.currentBrother = req.user; /* ? */
    res.locals.error = req.flash("error");
    res.locals.success = req.flash("success");
    next();

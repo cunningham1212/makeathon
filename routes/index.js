@@ -1,7 +1,7 @@
 var express = require("express");
 var router  = express.Router();
 var passport = require("passport");
-var User = require("../models/user");
+var Brother = require("../models/brother");
 
 //root route
 router.get("/", function(req, res){
@@ -15,14 +15,14 @@ router.get("/register", function(req, res){
 
 //handle sign up logic
 router.post("/register", function(req, res){
-    var newUser = new User({username: req.body.username});
-    User.register(newUser, req.body.password, function(err, user){
+    var newBrother = new Brother({username: req.body.username, fname: req.body.fname, lname: req.body.lname, nickname: req.body.nickname, email: req.body.email, isExec: false, isAlumni: false, isPledge: false, active: 1});
+    Brother.register(newBrother, req.body.password, function(err, brother){
         if(err){
             req.flash("error", err.message);
             return res.render("register");
         }
         passport.authenticate("local")(req, res, function(){
-           req.flash("success", "Welcome to YelpCamp " + user.username);
+           req.flash("success", "Welcome to YelpCamp " + brother.username);
            res.redirect("/campgrounds"); 
         });
     });
