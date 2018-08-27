@@ -9,7 +9,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>    
     </head>
     
-    <body>
+    <body onload="genEvents(); genResources()">
             <div class="container">
                     <% if(error && error.length > 0){ %>
                         <div class="alert alert-danger" role="alert">
@@ -32,73 +32,48 @@
     
                                 <!-- Header -->
                                     <header id="header">
-                                        <a href="#" class="logo"><strong>Sigma Phi Delta</strong> Beta Kappa</a>
+                                        <a href="#" class="logo"><strong>Sigma Phi Delta</strong> | Beta Kappa</a>
                                         <ul class="icons">
+                                            <!--
                                             <li><a href="https://twitter.com/SigmaPhiDelta" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                                             <li><a href="https://www.facebook.com/SigmaPhiDeltaLehigh/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                            -->
                                             <li><a href="https://www.instagram.com/lehighspd/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
                                         </ul>
                                     </header>
     
                                 <!-- Banner -->
-                                    <section id="banner">
-                                        <div class="content">
+                                <section id="banner" style="display: flex;">
+                                    <div class="content" style="flex: 1; display: flex; align-items: center;">
+                                        <div>
                                             <header>
                                                 <h1>Sigma Phi Delta</h1>
                                                 <p>Beta Kappa Chapter</p>
                                             </header>
                                             <p>The Lehigh University Beta Kappa chapter of Sigma Phi Delta is a home for engineers at Lehigh. Sigma Phi Delta is the premier international fraternity of engineers.</p>
                                             <ul class="actions">
-                                                <li><a href="/login" class="button big">Sign In</a></li>
-                                                <li><a href="/campgrounds" class="button big">Learn More</a></li>
+                                                <li style="width: auto;"><a href="/login" class="button big">Sign In</a></li>
+                                                <li style="width: auto;"><a href="/info" class="button big">Learn More</a></li>
                                             </ul>
                                         </div>
-                                        <span class="image object">
-                                            <img src="images/main.jpg" alt="" />
-                                        </span>
-                                    </section>
-                                </div>
+                                    </div>
+                                    <span class="image object" style="flex: 1;">
+                                        <img src="images/main.jpg" alt="">
+                                    </span>
+                                </section>
+                            </div>
     
                                 <div class="inner" style="background-color: #CC0000">
                                     <section>
                                         <header class="major">
                                             <h2>Events</h2>
                                         </header>
-                                        <div class="posts">
-                                            <article>
-                                                <div class="event">
-                                                    <h1>Event One</h2>
-                                                    <h3><i>5/1/2018 5PM Packard</i></h3>
-                                                    <p>Hello world, this so some text. This is a great event that you should totally go to. 10/10 the best. Please, please please go.</p>
-                                                    <a href="#" class="button special small event-button">Philanthropy Event</a>
-                                                </div>
-                                            </article>
-                                            <article>
-                                                <div class="event">
-                                                    <h1>Event Two</h2>
-                                                    <h3><i>5/1/2018 5PM Packard</i></h3>
-                                                    <p>Hello world, this so some text. This is a great event that you should totally go to. 10/10 the best. Please, please please go.</p>
-                                                    <a href="#" class="button special small event-button">Professional Event</a>
-                                                </div>
-                                            </article>
-                                            <article>
-                                                <div class="event">
-                                                    <h1>Event Three</h2>
-                                                    <h3><i>5/1/2018 5PM Packard</i></h3>
-                                                    <p>Hello world, this so some text. This is a great event that you should totally go to. 10/10 the best. Please, please please go.</p>
-                                                    <a href="#" class="button special small event-button">Philanthropy Event</a>
-                                                </div>
-                                            </article>
-                                            <article>
-                                                <div class="event">
-                                                    <h1>Event Four</h2>
-                                                    <h3><i>5/1/2018 5PM Packard</i></h3>
-                                                    <p>Hello world, this so some text. This is a great event that you should totally go to. 10/10 the best. Please, please please go.</p>
-                                                    <a href="#" class="button special small event-button">Philanthropy Event</a>
-                                                </div>
-                                            </article>
+                                        <div id="eventFill" class="posts">
+                                            
                                         </div>
+                                        <!--
                                             <p style="text-align: center; margin-top: 50px">See More | See Previous</p>
+                                        -->
     
                                     <style>
                                     .event {
@@ -125,14 +100,16 @@
                                         </header>
                                         <p>Sigma Phi Delta Beta Kappa brothers have all kinds of backgrounds.</p>
                                         <div class="row 50% uniform" style="margin-bottom: 30px">
-                                            <div class="4u"><span class="image fit"><img src="images/photo1.png" alt="" /></span></div>
-                                            <div class="4u"><span class="image fit"><img src="images/photo2.png" alt="" /></span></div>
-                                            <div class="4u$"><span class="image fit"><img src="images/photo3.png" alt="" /></span></div>
+                                            <div class="4u"><span class="image fit"><img src="images/p1.png" alt="" /></span></div>
+                                            <div class="4u"><span class="image fit"><img src="images/p2.png" alt="" /></span></div>
+                                            <div class="4u$"><span class="image fit"><img src="images/p3.png" alt="" /></span></div>
                                         </div>
+                                        <!--
                                         <ul class="actions">
                                             <li><a href="#" class="button big" style="margin-bottom: 10px">Exec Members</a></li>
                                             <li><a href="#" class="button big" style="margin-bottom: 10px">Active Brothers</a></li>
                                         </ul>
+                                    -->
                                     </section>
     
     
@@ -142,21 +119,8 @@
                                     <header class="major">
                                         <h2>Professional Resources</h2>
                                     </header>
-                                    <div class="posts">
-                                        <article>
-                                            <h3>Public Resource One</h3>
-                                            <p>These are resources we make available to everyone to demonstrate our professional aspects.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
-                                            </ul>
-                                        </article>
-                                        <article>
-                                            <h3>Public Resource Two</h3>
-                                            <p>These are resources we make available to everyone to demonstrate our professional aspects.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+                                    <div id="profFill" class="posts">
+                                        
                                     </div>
                                 </section>
     
@@ -180,9 +144,11 @@
                                                 <h2>I Am...</h2>
                                             </header>
                                             <ul>
-                                                <li><a href="#">Someone Interested in SPD</a></li>
+                                                <li><a href="/info">Someone Interested in SPD</a></li>
                                                 <li><a href="/login">A Beta Kappa Sigma Phi Delta Brother</a></li>
-                                                <li><a href="#">An Other Sigma Phi Delta Brother</a></li>
+                                                <!--
+                                                    <li><a href="#">An Other Sigma Phi Delta Brother</a></li>
+                                                -->
                                             </ul>
                                         </section>
                                         <section style="margin-top: 30px">
@@ -191,7 +157,7 @@
                                             </header>
                                             <p>Sigma Phi Delta brothers are engineers who see a value in brotherhood, duty, and academic success.</p>
                                             <ul>
-                                                <li><a href="#">Learn More</a></li>
+                                                <li><a href="/info">Learn More</a></li>
                                             </ul>
                                         </section>
     
@@ -214,6 +180,8 @@
                 <script src="/js/util.js"></script>
                 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
                 <script src="/js/main.js"></script>
+                <script src="/js/events.js"></script>
+                <script src="/js/resources.js"></script>
     
         </body>
     </html>

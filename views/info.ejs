@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sigma Phi Delta - Beta Kappa</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/stylesheets/landing.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>    
+    </head>
+    
+    <body onload="genAllBrothers()">
+            <div class="container">
+                    <% if(error && error.length > 0){ %>
+                        <div class="alert alert-danger" role="alert">
+                            <%= error %>
+                        </div>
+                    <% } %>
+                    <% if(success && success.length > 0){ %>
+                        <div class="alert alert-success" role="alert">
+                            <%= success %>
+                        </div>
+                    <% } %>
+                </div>
+
+            <!-- Wrapper -->
+                <div id="wrapper">
+    
+                    <!-- Main -->
+                        <div id="main">
+                            <div class="inner">
+    
+                                <!-- Header -->
+                                <header id="header">
+                                    <ul class="icons" style="text-align: left;max-width: 35px;margin: 0;right: auto;top: 12px;">
+                                        <li><a href="/" class="icon fa-arrow-left" style="font-size: 20px; margin: 0; line-height: 35px;"><span class="label">Back</span></a></li>
+                                    </ul>
+                                    <a href="/" class="logo" style="line-height: 35px;"><strong>Sigma Phi Delta</strong> | Learn More</a>
+                                </header>
+    
+                                <!-- Banner -->
+                                    <section id="banner">
+                                        <div class="content">
+                                            <header>
+                                                <h1>Sigma Phi Delta</h1>
+                                                <p>Lehigh University's Engineering Fraternity</p>
+                                            </header>
+                                            <p>The Lehigh University Beta Kappa chapter of Sigma Phi Delta is a home for engineers at Lehigh. Sigma Phi Delta is the premier international fraternity of engineers.</p>
+                                        </div>
+                                    </section>
+                                </div>
+    
+                                <div class="inner" style="background-color: #CC0000">
+                                        <section id="banner">
+                                            <div class="content">
+                                                <header>
+                                                    <h1 style="font-size: 2rem;">Learn More</h1>
+                                                    <p style="text-transform: none; letter-spacing: normal; font-size: 1.3rem; margin: 15px 0px;">We think that the best way to learn more about Sigma Phi Delta is to hear about it from a brother.</p>
+                                                </header>
+                                                <p style="margin: 15px 0px; color: #fff; font-size: 0.95rem; font-weight: 700">Click below to find with a brother that you have things in common with.</p>
+                                            </div>
+                                        </section> 
+                                    </div>
+    
+                                <div class="inner">
+    
+                                    <section>
+                                        <header class="major">
+                                            <h2>Find Brother Like You</h2>
+                                        </header>
+                                        
+                                        <div id="peopleFill">
+
+                                        </div>
+                                    </section>
+    
+    
+                            </div>
+                        </div>
+    
+                        <style>
+                        .white-text {
+                            color: #fff;
+                        }
+                        </style>
+    
+                </div>
+    
+            <!-- Scripts -->
+                <script src="/js/jquery.min.js"></script>
+                <script src="/js/skel.min.js"></script>
+                <script src="/js/util.js"></script>
+                <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+                <script src="/js/main.js"></script>
+                <script src="/js/brothers.js"></script>
+    
+        </body>
+    </html>

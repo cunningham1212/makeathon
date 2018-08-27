@@ -8,6 +8,10 @@ router.get("/", function(req, res){
     res.render("landing");
 });
 
+router.get("/info", function(req, res){
+    res.render("info");
+});
+
 // show register form
 router.get("/register", function(req, res){
    res.render("register"); 
