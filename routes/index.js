@@ -12,6 +12,10 @@ router.get("/info", function(req, res){
     res.render("info");
 });
 
+router.get("/coming-soon", function(req, res){
+    res.render("soon");
+});
+
 // show register form
 router.get("/register", function(req, res){
    res.render("register"); 
