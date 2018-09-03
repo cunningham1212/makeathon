@@ -1,13 +1,13 @@
 {
   "name": "v1",
   "version": "1.0.0",
-  "description": "Lehigh Sigma Phi Delta",
+  "description": "Lehigh Makeathon",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "Lehigh Sigma Phi Delta",
+  "author": "John Cunningham",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.1",
