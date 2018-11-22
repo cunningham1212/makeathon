@@ -3,4 +3,4 @@
 This is the website for Lehigh's Makeathon.
 
 Run yarn install and yarn start to run it on your local machine.
-See the live version at [bit.ly/lumakes] (https://bit.ly/lumakes)
+See the live version at https://bit.ly/lumakes
